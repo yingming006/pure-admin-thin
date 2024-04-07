@@ -1,0 +1,642 @@
+{
+  "code": 200,
+  "msg": null,
+  "data": {
+    "srAdminClassList": [
+      {
+        "batchId": "e4f653a2-13f1-43e9-9531-152528ff7538",
+        "adminClassName": "一班",
+        "srStudentList": [
+          {
+            "rowNo": 1,
+            "studentName": "卢香婉",
+            "sign": null,
+            "className": "一班",
+            "studentTitleValueMap": {
+              "cdeead2e-5e53-4500-a308-4cbb9acdc620": {
+                "batchId": "cdeead2e-5e53-4500-a308-4cbb9acdc620",
+                "idx": 0,
+                "type": 4,
+                "name": "班级000",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "1班"
+              },
+              "6dfe714f-583f-49fd-93f7-ccbb264ee3e6": {
+                "batchId": "6dfe714f-583f-49fd-93f7-ccbb264ee3e6",
+                "idx": 2,
+                "type": 2,
+                "name": "语文",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "96"
+              },
+              "64418b8a-c757-47a0-9ac6-58d8eff345a7": {
+                "batchId": "64418b8a-c757-47a0-9ac6-58d8eff345a7",
+                "idx": 8,
+                "type": 2,
+                "name": "历史",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "62"
+              },
+              "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f": {
+                "batchId": "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f",
+                "idx": 4,
+                "type": 2,
+                "name": "英语",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "96.5"
+              },
+              "77c563d6-a248-4433-8bb0-779888383dad": {
+                "batchId": "77c563d6-a248-4433-8bb0-779888383dad",
+                "idx": 5,
+                "type": 2,
+                "name": "物理",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "55"
+              },
+              "a36e1562-d05a-41e4-87ca-2976b044cff1": {
+                "batchId": "a36e1562-d05a-41e4-87ca-2976b044cff1",
+                "idx": 10,
+                "type": 3,
+                "name": "总成绩",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "549.5"
+              },
+              "fb5e258e-ce3b-4294-9343-f3c75b959d3e": {
+                "batchId": "fb5e258e-ce3b-4294-9343-f3c75b959d3e",
+                "idx": 9,
+                "type": 2,
+                "name": "体育",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "45"
+              },
+              "b852fdbf-aeea-4136-8264-a9a51cef4d63": {
+                "batchId": "b852fdbf-aeea-4136-8264-a9a51cef4d63",
+                "idx": 11,
+                "type": 4,
+                "name": "名次",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "1"
+              },
+              "59458199-405d-4876-8dda-01b40374d09e": {
+                "batchId": "59458199-405d-4876-8dda-01b40374d09e",
+                "idx": 3,
+                "type": 2,
+                "name": "数学",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "98"
+              },
+              "40a23439-2fff-4e84-b80c-a9bf2cb95d3e": {
+                "batchId": "40a23439-2fff-4e84-b80c-a9bf2cb95d3e",
+                "idx": 6,
+                "type": 2,
+                "name": "化学",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "48"
+              },
+              "ea184143-955d-481d-9c36-88f7eda4d986": {
+                "batchId": "ea184143-955d-481d-9c36-88f7eda4d986",
+                "idx": 7,
+                "type": 2,
+                "name": "道法",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "49"
+              }
+            }
+          },
+        ],
+        "titleList": [
+          {
+            "batchId": "cdeead2e-5e53-4500-a308-4cbb9acdc620",
+            "idx": 0,
+            "type": 4,
+            "name": "班级000",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null
+          },
+          {
+            "batchId": "6dfe714f-583f-49fd-93f7-ccbb264ee3e6",
+            "idx": 2,
+            "type": 2,
+            "name": "语文",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 120
+          },
+          {
+            "batchId": "59458199-405d-4876-8dda-01b40374d09e",
+            "idx": 3,
+            "type": 2,
+            "name": "数学",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 100
+          },
+          {
+            "batchId": "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f",
+            "idx": 4,
+            "type": 2,
+            "name": "英语",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 100
+          },
+          {
+            "batchId": "77c563d6-a248-4433-8bb0-779888383dad",
+            "idx": 5,
+            "type": 2,
+            "name": "物理",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 70
+          },
+          {
+            "batchId": "40a23439-2fff-4e84-b80c-a9bf2cb95d3e",
+            "idx": 6,
+            "type": 2,
+            "name": "化学",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 50
+          },
+          {
+            "batchId": "ea184143-955d-481d-9c36-88f7eda4d986",
+            "idx": 7,
+            "type": 2,
+            "name": "道法",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 50
+          },
+          {
+            "batchId": "64418b8a-c757-47a0-9ac6-58d8eff345a7",
+            "idx": 8,
+            "type": 2,
+            "name": "历史",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 70
+          },
+          {
+            "batchId": "fb5e258e-ce3b-4294-9343-f3c75b959d3e",
+            "idx": 9,
+            "type": 2,
+            "name": "体育",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 50
+          },
+          {
+            "batchId": "b852fdbf-aeea-4136-8264-a9a51cef4d63",
+            "idx": 11,
+            "type": 4,
+            "name": "名次",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null
+          },
+          {
+            "batchId": "a36e1562-d05a-41e4-87ca-2976b044cff1",
+            "idx": 10,
+            "type": 3,
+            "name": "总成绩",
+            "relationTitleRankBatchIds": [
+              "b852fdbf-aeea-4136-8264-a9a51cef4d63"
+            ],
+            "totalScore": null
+          }
+        ]
+      },
+      {
+        "batchId": "9d369386-708d-4b42-b357-25222a87d223",
+        "adminClassName": "二班",
+        "srStudentList": [
+          {
+            "rowNo": 5,
+            "studentName": "管骞喆",
+            "sign": null,
+            "className": "二班",
+            "studentTitleValueMap": {
+              "cdeead2e-5e53-4500-a308-4cbb9acdc620": {
+                "batchId": "cdeead2e-5e53-4500-a308-4cbb9acdc620",
+                "idx": 0,
+                "type": 4,
+                "name": "班级000",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "2班"
+              },
+              "6dfe714f-583f-49fd-93f7-ccbb264ee3e6": {
+                "batchId": "6dfe714f-583f-49fd-93f7-ccbb264ee3e6",
+                "idx": 2,
+                "type": 2,
+                "name": "语文",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "108"
+              },
+              "64418b8a-c757-47a0-9ac6-58d8eff345a7": {
+                "batchId": "64418b8a-c757-47a0-9ac6-58d8eff345a7",
+                "idx": 8,
+                "type": 2,
+                "name": "历史",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "64"
+              },
+              "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f": {
+                "batchId": "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f",
+                "idx": 4,
+                "type": 2,
+                "name": "英语",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "97"
+              },
+              "77c563d6-a248-4433-8bb0-779888383dad": {
+                "batchId": "77c563d6-a248-4433-8bb0-779888383dad",
+                "idx": 5,
+                "type": 2,
+                "name": "物理",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "60"
+              },
+              "a36e1562-d05a-41e4-87ca-2976b044cff1": {
+                "batchId": "a36e1562-d05a-41e4-87ca-2976b044cff1",
+                "idx": 10,
+                "type": 3,
+                "name": "总成绩",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "557"
+              },
+              "fb5e258e-ce3b-4294-9343-f3c75b959d3e": {
+                "batchId": "fb5e258e-ce3b-4294-9343-f3c75b959d3e",
+                "idx": 9,
+                "type": 2,
+                "name": "体育",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "45"
+              },
+              "b852fdbf-aeea-4136-8264-a9a51cef4d63": {
+                "batchId": "b852fdbf-aeea-4136-8264-a9a51cef4d63",
+                "idx": 11,
+                "type": 4,
+                "name": "名次",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "5"
+              },
+              "59458199-405d-4876-8dda-01b40374d09e": {
+                "batchId": "59458199-405d-4876-8dda-01b40374d09e",
+                "idx": 3,
+                "type": 2,
+                "name": "数学",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "91"
+              },
+              "40a23439-2fff-4e84-b80c-a9bf2cb95d3e": {
+                "batchId": "40a23439-2fff-4e84-b80c-a9bf2cb95d3e",
+                "idx": 6,
+                "type": 2,
+                "name": "化学",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "47"
+              },
+              "ea184143-955d-481d-9c36-88f7eda4d986": {
+                "batchId": "ea184143-955d-481d-9c36-88f7eda4d986",
+                "idx": 7,
+                "type": 2,
+                "name": "道法",
+                "relationTitleRankBatchIds": null,
+                "totalScore": null,
+                "value": "45"
+              }
+            }
+          },
+        ],
+        "titleList": [
+          {
+            "batchId": "cdeead2e-5e53-4500-a308-4cbb9acdc620",
+            "idx": 0,
+            "type": 4,
+            "name": "班级000",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null
+          },
+          {
+            "batchId": "6dfe714f-583f-49fd-93f7-ccbb264ee3e6",
+            "idx": 2,
+            "type": 2,
+            "name": "语文",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 120
+          },
+          {
+            "batchId": "59458199-405d-4876-8dda-01b40374d09e",
+            "idx": 3,
+            "type": 2,
+            "name": "数学",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 100
+          },
+          {
+            "batchId": "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f",
+            "idx": 4,
+            "type": 2,
+            "name": "英语",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 100
+          },
+          {
+            "batchId": "77c563d6-a248-4433-8bb0-779888383dad",
+            "idx": 5,
+            "type": 2,
+            "name": "物理",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 70
+          },
+          {
+            "batchId": "40a23439-2fff-4e84-b80c-a9bf2cb95d3e",
+            "idx": 6,
+            "type": 2,
+            "name": "化学",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 50
+          },
+          {
+            "batchId": "ea184143-955d-481d-9c36-88f7eda4d986",
+            "idx": 7,
+            "type": 2,
+            "name": "道法",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 50
+          },
+          {
+            "batchId": "64418b8a-c757-47a0-9ac6-58d8eff345a7",
+            "idx": 8,
+            "type": 2,
+            "name": "历史",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 70
+          },
+          {
+            "batchId": "fb5e258e-ce3b-4294-9343-f3c75b959d3e",
+            "idx": 9,
+            "type": 2,
+            "name": "体育",
+            "relationTitleRankBatchIds": null,
+            "totalScore": 50
+          },
+          {
+            "batchId": "b852fdbf-aeea-4136-8264-a9a51cef4d63",
+            "idx": 11,
+            "type": 4,
+            "name": "名次",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null
+          },
+          {
+            "batchId": "a36e1562-d05a-41e4-87ca-2976b044cff1",
+            "idx": 10,
+            "type": 3,
+            "name": "总成绩",
+            "relationTitleRankBatchIds": [
+              "b852fdbf-aeea-4136-8264-a9a51cef4d63"
+            ],
+            "totalScore": null
+          }
+        ]
+      },
+    ],
+    "type": 2,
+    "parseInfo": {
+      "batchId": "5a50c2b7-9026-4538-9a40-75febbcb610f",
+      "fileName": "倍思快成绩_示例成绩单.xls",
+      "parseDate": "2024-04-07 14:31:40",
+      "status": "PARSED",
+      "msg": null
+    },
+    "duplicateStudentName": [
+      {
+        "rowNo": 1,
+        "studentName": "卢香婉",
+        "sign": null,
+        "className": "一班",
+        "studentTitleValueMap": {
+          "cdeead2e-5e53-4500-a308-4cbb9acdc620": {
+            "batchId": "cdeead2e-5e53-4500-a308-4cbb9acdc620",
+            "idx": 0,
+            "type": 4,
+            "name": "班级000",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "1班"
+          },
+          "6dfe714f-583f-49fd-93f7-ccbb264ee3e6": {
+            "batchId": "6dfe714f-583f-49fd-93f7-ccbb264ee3e6",
+            "idx": 2,
+            "type": 2,
+            "name": "语文",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "96"
+          },
+          "64418b8a-c757-47a0-9ac6-58d8eff345a7": {
+            "batchId": "64418b8a-c757-47a0-9ac6-58d8eff345a7",
+            "idx": 8,
+            "type": 2,
+            "name": "历史",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "62"
+          },
+          "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f": {
+            "batchId": "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f",
+            "idx": 4,
+            "type": 2,
+            "name": "英语",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "96.5"
+          },
+          "77c563d6-a248-4433-8bb0-779888383dad": {
+            "batchId": "77c563d6-a248-4433-8bb0-779888383dad",
+            "idx": 5,
+            "type": 2,
+            "name": "物理",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "55"
+          },
+          "a36e1562-d05a-41e4-87ca-2976b044cff1": {
+            "batchId": "a36e1562-d05a-41e4-87ca-2976b044cff1",
+            "idx": 10,
+            "type": 3,
+            "name": "总成绩",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "549.5"
+          },
+          "fb5e258e-ce3b-4294-9343-f3c75b959d3e": {
+            "batchId": "fb5e258e-ce3b-4294-9343-f3c75b959d3e",
+            "idx": 9,
+            "type": 2,
+            "name": "体育",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "45"
+          },
+          "b852fdbf-aeea-4136-8264-a9a51cef4d63": {
+            "batchId": "b852fdbf-aeea-4136-8264-a9a51cef4d63",
+            "idx": 11,
+            "type": 4,
+            "name": "名次",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "1"
+          },
+          "59458199-405d-4876-8dda-01b40374d09e": {
+            "batchId": "59458199-405d-4876-8dda-01b40374d09e",
+            "idx": 3,
+            "type": 2,
+            "name": "数学",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "98"
+          },
+          "40a23439-2fff-4e84-b80c-a9bf2cb95d3e": {
+            "batchId": "40a23439-2fff-4e84-b80c-a9bf2cb95d3e",
+            "idx": 6,
+            "type": 2,
+            "name": "化学",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "48"
+          },
+          "ea184143-955d-481d-9c36-88f7eda4d986": {
+            "batchId": "ea184143-955d-481d-9c36-88f7eda4d986",
+            "idx": 7,
+            "type": 2,
+            "name": "道法",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "49"
+          }
+        }
+      },
+      {
+        "rowNo": 2,
+        "studentName": "卢香婉",
+        "sign": null,
+        "className": "一班",
+        "studentTitleValueMap": {
+          "cdeead2e-5e53-4500-a308-4cbb9acdc620": {
+            "batchId": "cdeead2e-5e53-4500-a308-4cbb9acdc620",
+            "idx": 0,
+            "type": 4,
+            "name": "班级000",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "1班"
+          },
+          "6dfe714f-583f-49fd-93f7-ccbb264ee3e6": {
+            "batchId": "6dfe714f-583f-49fd-93f7-ccbb264ee3e6",
+            "idx": 2,
+            "type": 2,
+            "name": "语文",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "89"
+          },
+          "64418b8a-c757-47a0-9ac6-58d8eff345a7": {
+            "batchId": "64418b8a-c757-47a0-9ac6-58d8eff345a7",
+            "idx": 8,
+            "type": 2,
+            "name": "历史",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "62"
+          },
+          "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f": {
+            "batchId": "0006e847-e9a0-4b0b-89f7-e45a9eed7f4f",
+            "idx": 4,
+            "type": 2,
+            "name": "英语",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "96.5"
+          },
+          "77c563d6-a248-4433-8bb0-779888383dad": {
+            "batchId": "77c563d6-a248-4433-8bb0-779888383dad",
+            "idx": 5,
+            "type": 2,
+            "name": "物理",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "67"
+          },
+          "a36e1562-d05a-41e4-87ca-2976b044cff1": {
+            "batchId": "a36e1562-d05a-41e4-87ca-2976b044cff1",
+            "idx": 10,
+            "type": 3,
+            "name": "总成绩",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "559.5"
+          },
+          "fb5e258e-ce3b-4294-9343-f3c75b959d3e": {
+            "batchId": "fb5e258e-ce3b-4294-9343-f3c75b959d3e",
+            "idx": 9,
+            "type": 2,
+            "name": "体育",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "50"
+          },
+          "b852fdbf-aeea-4136-8264-a9a51cef4d63": {
+            "batchId": "b852fdbf-aeea-4136-8264-a9a51cef4d63",
+            "idx": 11,
+            "type": 4,
+            "name": "名次",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "2"
+          },
+          "59458199-405d-4876-8dda-01b40374d09e": {
+            "batchId": "59458199-405d-4876-8dda-01b40374d09e",
+            "idx": 3,
+            "type": 2,
+            "name": "数学",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "98"
+          },
+          "40a23439-2fff-4e84-b80c-a9bf2cb95d3e": {
+            "batchId": "40a23439-2fff-4e84-b80c-a9bf2cb95d3e",
+            "idx": 6,
+            "type": 2,
+            "name": "化学",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "48"
+          },
+          "ea184143-955d-481d-9c36-88f7eda4d986": {
+            "batchId": "ea184143-955d-481d-9c36-88f7eda4d986",
+            "idx": 7,
+            "type": 2,
+            "name": "道法",
+            "relationTitleRankBatchIds": null,
+            "totalScore": null,
+            "value": "49"
+          }
+        }
+      }
+    ]
+  }
+}
