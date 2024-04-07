@@ -71,7 +71,9 @@
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "vue-tippy": "^6.4.1",
-    "vue-types": "^5.1.1"
+    "vue-types": "^5.1.1",
+    "vuedraggable": "^4.1.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
