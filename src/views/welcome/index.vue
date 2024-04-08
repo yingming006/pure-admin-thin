@@ -2,7 +2,6 @@
 import { reactive, ref } from "vue";
 import { Edit, Histogram, UploadFilled } from "@element-plus/icons-vue";
 import {
-  Column,
   ElMessageBox,
   genFileId,
   UploadInstance,
@@ -16,7 +15,8 @@ import Pagination from "@/components/Pagination/index.vue";
 import { useRenderIcon } from "@/components/ReIcon/src/hooks";
 import ArrowUp from "@iconify-icons/ep/arrow-up-bold";
 import EpArrowDown from "@iconify-icons/ep/arrow-down-bold";
-import { PureTable } from "@pureadmin/table";
+import DataTable from "primevue/datatable";
+import Column from "primevue/column";
 
 defineOptions({
   name: "Welcome"
@@ -29,27 +29,16 @@ const state = reactive({ file: null });
 
 // 成绩表
 const report = reactive({
-  stage: null,
-  year: null,
   name: null,
-  date: null
+  date: null,
+  sheetData: null
 });
 
 // 文件解析数据
 const headers = ref();
 const rows = ref();
 
-// 分页数据
-const pageData = reactive({
-  list: [],
-  total: 0,
-  currentPage: 1,
-  pageSize: 3
-});
-
-const isExpand = ref(true); // 学生成绩是否折叠
-
-const clazzList = ref<string[]>([]); // 班级列表
+const isExpand = ref(false); // 学生成绩是否折叠
 
 const uploadRef = ref<UploadInstance>();
 
@@ -80,52 +69,24 @@ const importAB = async (ab: ArrayBuffer): Promise<void> => {
   console.log(data.SheetNames?.[0], "currSheet");
   console.log(data.SheetNames, "sheets");
   console.log(data.Sheets, "workBook");
-  let newRows = utils.sheet_to_json(data.Sheets[data.SheetNames?.[0]], {
-    header: 1
-  });
-  let headers0 = newRows.splice(0, 1)[0] as string[];
-  headers.value = headers0.map((item, columnIndex) => ({
-    key: columnIndex,
-    dataKey: columnIndex,
-    title: item,
-    label: item,
-    prop: item,
-    width: 150
+  const sheetData: any[] = utils.sheet_to_json(
+    data.Sheets[data.SheetNames?.[0]],
+    { header: 1, raw: false }
+  );
+  console.log(sheetData, "sheetData");
+  report.sheetData = sheetData;
+  headers.value = sheetData[0].map((header: string) => ({
+    field: header,
+    header: header
   }));
+  rows.value = sheetData.slice(1).map((row: string[]) => {
+    return headers.value.reduce((obj: any, header: any, index: number) => {
+      obj[header.field] = row[index];
+      return obj;
+    }, {});
+  });
   console.log(headers.value, "headers");
-  // 转换格式
-  newRows = newRows.map(row => {});
   console.log(rows.value, "rows");
-
-  pageData.total = rows.value.length;
-  pageData.currentPage = 1;
-  pageData.pageSize = 3;
-  getPageList();
-
-  // 提取班级
-  const classIndex = headers.value.findIndex(item => item.title === "班级");
-  if (classIndex !== -1) {
-    const classList = new Set<string>();
-    rows.value.forEach(row => {
-      const classStr = row[classIndex] as string;
-      if (classStr) {
-        classList.add(classStr);
-      }
-    });
-    clazzList.value.push(...classList);
-    clazzList.value.sort();
-  }
-  console.log(clazzList.value, "clazzList");
-};
-
-const getPageList = () => {
-  const startIndex = pageData.currentPage < 1 ? 0 : pageData.currentPage - 1;
-  const endIndex =
-    startIndex * pageData.pageSize + pageData.pageSize >= pageData.total
-      ? pageData.total
-      : startIndex * pageData.pageSize + pageData.pageSize;
-  pageData.list = rows.value.slice(startIndex, endIndex);
-  console.log(pageData);
 };
 
 const nextStep1 = () => {
@@ -210,7 +171,6 @@ const backStep2 = () => {
           <el-form-item label="时间">
             <el-date-picker v-model="report.date" type="date" />
           </el-form-item>
-
           <el-form-item label="预览">
             <el-button
               link
@@ -222,26 +182,22 @@ const backStep2 = () => {
             </el-button>
           </el-form-item>
           <div v-if="!isExpand" style="height: 200px">
-            <el-auto-resizer>
-              <template #default="{ width, height }">
-                <el-table-v2
-                  :columns="headers"
-                  :data="pageData.list"
-                  :width="width"
-                  :height="height"
-                />
-              </template>
-            </el-auto-resizer>
-            <Pagination
-              v-model:page="pageData.currentPage"
-              v-model:limit="pageData.pageSize"
-              :total="pageData.total"
-              :layout="'prev, pager, next'"
-              @pagination="getPageList"
-            />
+            <DataTable
+              :value="rows"
+              :size="'small'"
+              showGridlines
+              paginator
+              :rows="3"
+            >
+              <Column
+                v-for="header in headers"
+                :key="header.field"
+                :field="header.field"
+                :header="header.header"
+              />
+            </DataTable>
           </div>
         </el-form>
-        <PureTable :columns="headers" :data="pageData.list" :height="500" />
       </el-card>
       <!--  设置成绩 end  -->
 
@@ -269,3 +225,9 @@ const backStep2 = () => {
     </el-dialog>
   </div>
 </template>
+
+<style>
+.p-datatable.p-datatable-gridlines .p-paginator-bottom {
+  border-width: 0 !important;
+}
+</style>

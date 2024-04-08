@@ -7,6 +7,7 @@ import { MotionPlugin } from "@vueuse/motion";
 import { createApp, type Directive } from "vue";
 import { useElementPlus } from "@/plugins/elementPlus";
 import { injectResponsiveStorage } from "@/utils/responsive";
+import PrimeVueStyled from "primevue/styled";
 
 // import Table from "@pureadmin/table";
 // import PureDescriptions from "@pureadmin/descriptions";
@@ -58,5 +59,6 @@ getPlatformConfig(app).then(async config => {
   app.use(MotionPlugin).use(useElementPlus);
   // .use(PureDescriptions)
   // .use(useEcharts);
+  app.use(PrimeVueStyled);
   app.mount("#app");
 });
