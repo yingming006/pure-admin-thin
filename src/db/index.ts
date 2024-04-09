@@ -1,22 +1,28 @@
 import Dexie, { type Table } from "dexie";
 
-export interface Friend {
+export interface Report {
   id?: number;
-  name: string;
-  age: number;
+  name?: string;
+  date?: number;
+  sheetData?: any;
+  clazzList?: any;
+  studentList?: any;
+  subjectList?: any;
+  file?: any;
+  created?: number;
+  deleted: 0 | 1;
 }
 
-export class MySubClassedDexie extends Dexie {
-  // 'friends' is added by dexie when declaring the stores()
-  // We just tell the typing system this is the case
-  friends!: Table<Friend>;
+export class ReportDexie extends Dexie {
+  report!: Table<Report>;
 
   constructor() {
-    super("myDatabase");
+    super("reportDB");
     this.version(1).stores({
-      friends: "++id, name, age" // Primary key and indexed props
+      report:
+        "++id, name, date, sheetData, clazzList, studentList, subjectList, file, created, deleted"
     });
   }
 }
 
-export const db = new MySubClassedDexie();
+export const reportDexie = new ReportDexie();

@@ -50,7 +50,7 @@ export function getPluginsList(
     removeConsole({ external: ["src/assets/iconfont/iconfont.js"] }),
     // 打包分析
     lifecycle === "report"
-      ? visualizer({ open: true, brotliSize: true, filename: "report.html" })
+      ? visualizer({ open: true, brotliSize: true, filename: "home.html" })
       : (null as any)
   ];
 }
